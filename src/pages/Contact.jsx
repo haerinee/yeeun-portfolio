@@ -6,17 +6,17 @@ export default function Contact() {
       <Container>
         <Title>CONTACT</Title>
         <ContactLine>
-          <a href="https://www.instagram.com/yeeun_bang" target="_blank" rel="noopener noreferrer">
-            @yeeun_bang
+          <a href="https://www.instagram.com/polowingu" target="_blank" rel="noopener noreferrer">
+            @polowingu
           </a>
         </ContactLine>
         <ContactLine>
-          <a href="mailto:yeeun.bang@example.com">yeeun.bang@example.com</a>
+          <a href="mailto:polowingu@gmail.com">polowingu@gmail.com</a>
         </ContactLine>
       </Container>
     );
   }
-  
+
 const Container = styled.main`
   padding: 140px 24px;
   text-align: center;

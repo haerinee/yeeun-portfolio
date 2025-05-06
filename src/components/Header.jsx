@@ -13,7 +13,7 @@ export const Header = () => {
       <Logo to="/">Yeeun Bang</Logo>
       <Nav>
         {['Works', 'Drawings', 'Exhibitions', 'CV', 'contact'].map((item) => (
-          <Link key={item} to={`/${item}`}><div style={{padding: '4px 8px'}}>{item}</div></Link>
+          <MenuItem key={item} to={`/${item}`}><div style={{padding: '4px 8px'}}>{item}</div></MenuItem>
         ))}
       </Nav>
       <MenuButton onClick={() => setIsOpen(true)}>&#9776;</MenuButton>
@@ -59,4 +59,17 @@ const MenuButton = styled.button`
   @media (max-width: 768px) {
     display: block;
   }
+`;
+const MenuItem = styled(Link)`
+padding: 0.3rem 0.5rem;            /* py-2 px-4 */
+border-radius: 9999px;          /* rounded-full */
+text-align: center;
+font-weight: 600;               /* font-semibold */
+letter-spacing: -0.015em;       /* tracking-tight 대체 */
+color: #1e293b;                 /* slate-800 */
+transition: all 0.3s ease-in-out;
+
+&:hover {
+  background-color: #f1f5f9;    /* gray-100 */
+}
 `;
