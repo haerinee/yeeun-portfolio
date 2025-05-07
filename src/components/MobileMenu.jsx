@@ -36,10 +36,11 @@ const Overlay = styled.div`
   z-index: 999;
 `;
 
-const CloseButton = styled.button`
+// const CloseButton = styled.button`
+const CloseButton = styled.div`
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 12px;
   font-size: 2rem;
   background: none;
   color: white;

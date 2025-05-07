@@ -52,8 +52,8 @@ const Nav = styled.nav`
     display: none;
   }
 `;
-
-const MenuButton = styled.button`
+/* const MenuButton = styled.button` */
+const MenuButton = styled.div`
   display: none;
   background: none;
   font-size: 1.6rem;
@@ -69,10 +69,10 @@ const MenuItem = styled(Link)`
   text-align: center;
   font-weight: 600; /* font-semibold */
   letter-spacing: -0.015em; /* tracking-tight 대체 */
-  color: #1e293b; /* slate-800 */
+  color: #1e293b;
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: #f1f5f9; /* gray-100 */
+    background-color: #f1f5f9;
   }
 `;
