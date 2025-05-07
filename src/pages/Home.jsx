@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import overthewindow from '../assets/images/overthewindow.png';
+import styled from "styled-components";
+import overthewindow from "../assets/images/overthewindow.png";
 
 export default function Home() {
   return (
@@ -8,9 +8,14 @@ export default function Home() {
         <StyledImage src={overthewindow} alt="Over the Window" />
         <Dim />
         <ImageInfo>
-          &lt;초여름의 움직이는 창 너머&gt;, 2024, acrylic on translucent fabric, 225 x 150 cm
+          &lt;초여름의 움직이는 창 너머&gt;, 2024, acrylic on translucent
+          fabric, 225 x 150 cm
         </ImageInfo>
       </ImageWrapper>
+      <FooterWrapper>
+        <div>© 2025 Polowingu, Ye-eun Bang</div>
+        {/* <div>2</div> */}
+      </FooterWrapper>
     </MainWrapper>
   );
 }
@@ -24,12 +29,13 @@ const MainWrapper = styled.main`
   padding-top: 80px; // 헤더 높이 고려
   padding-bottom: 40px;
   overflow: hidden;
+  flex-direction: column;
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
-  width: 75vw;            // 기존 90vw → 80vw로 더 작게
-  max-width: 900px;      // 데스크탑 기준 상한선 설정
+  width: 75vw; // 기존 90vw → 80vw로 더 작게
+  max-width: 900px; // 데스크탑 기준 상한선 설정
   max-height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
@@ -75,4 +81,15 @@ const ImageInfo = styled.span`
   transition: all 0.3s ease;
   white-space: pre-wrap;
   text-align: center;
+`;
+
+const FooterWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 `;

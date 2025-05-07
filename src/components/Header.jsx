@@ -30,8 +30,8 @@ const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 16px;
-  border-bottom: 1px solid #d2d8d4;
+  padding: 12px;
+  border-bottom: 1.3px solid #d2d8d4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@ const MenuButton = styled.button`
   }
 `;
 const MenuItem = styled(Link)`
-  padding: 0.3rem 0.5rem; /* py-2 px-4 */
+  padding: 0.2rem 0.4rem; /* py-2 px-4 */
   border-radius: 9999px; /* rounded-full */
   text-align: center;
   font-weight: 600; /* font-semibold */
