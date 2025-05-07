@@ -1,20 +1,28 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import SvgClose from "../assets/svg/Close";
 
 export const MobileMenu = ({ closeMenu }) => {
-    const links = ['Works', 'Drawings', 'Exhibitions', 'CV', 'contact'];
-  
-    return (
-      <Overlay>
-        <CloseButton onClick={closeMenu}>✕</CloseButton>
-        {links.map((item) => (
-          <Link key={item} to={`/${item}`} onClick={closeMenu} style={{ margin: '16px', fontSize: '1.2rem' }}>
-            {item}
-          </Link>
-        ))}
-      </Overlay>
-    );
-  };
+  const links = ["Works", "Drawings", "Exhibitions", "CV", "contact"];
+
+  return (
+    <Overlay>
+      <CloseButton onClick={closeMenu}>
+        <SvgClose width={20} height={20} />
+      </CloseButton>
+      {links.map((item) => (
+        <Link
+          key={item}
+          to={`/${item}`}
+          onClick={closeMenu}
+          style={{ margin: "16px", fontSize: "1.2rem" }}
+        >
+          {item}
+        </Link>
+      ))}
+    </Overlay>
+  );
+};
 
 const Overlay = styled.div`
   position: fixed;
@@ -38,4 +46,3 @@ const CloseButton = styled.button`
   border: none;
   cursor: pointer;
 `;
-
